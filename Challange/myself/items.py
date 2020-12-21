@@ -1,0 +1,51 @@
+item = (
+"BeMyShopper",
+"CouchPotato",
+"DestinGrocery",
+"DatGrocery",
+"BurpyGrocery",
+"BringMeDat",
+"ClickCall",
+"TakeaStep",
+"ToYourDoorGourmet",
+"SpecialDelivery",
+"EdensOrganics",
+"McKenzie’sFood Store",
+"NewleafGrocery",
+"CRISPMobileGrocery",
+"HungryHarvest",
+"FreshFood",
+"BrooklynFare",
+"FarmhouseDeliveryInc",
+"AthenaFarms",
+"FoxtrotMarket",
+"CommunityCouriers",
+"DeliveryDudes",
+"FrontPorchPickings",
+"AllAroundDelivery",
+"EliteServices",
+"BeachSideDelivery",
+"AmazonFresh",
+"FineChoiceFoodMart",
+"SimplyNaturalGrocer",
+"FreshOriginMarket",
+"health freshness",
+"FreshGrassets",
+"AuNaturalGourmet",
+"FreshOriginMarket",
+"BuyFreshFarm",
+"TheNaturalityShop",
+"StopandShop",
+"FarmtoFork",
+"NuFarmFresh",
+"RootsontheFarm",
+"RealFoodMarket",
+"LocalAcres",
+"Farmers GMarket")
+
+buys = []
+
+for itemss in item:
+    buys.append(itemss.lower())
+
+
