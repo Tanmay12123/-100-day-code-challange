@@ -46,7 +46,7 @@ def save():
             title="Oops", message="Please make sure you haven't left any fields empty.")
     else:
         try:
-            with open("C:/Users/home/Desktop/Tanmay The Entirety/Python Stuff/#100 day code challange/challange_15/data.json", "r") as data_file:
+            with open("C:/Users/home/Desktop/..../data.json", "r") as data_file: #Ad patth to the data.json file
                 # Reading old data
                 data = json.load(data_file)
         except FileNotFoundError:
@@ -58,7 +58,7 @@ def save():
 
             with open("data.json", "w") as data_file:
                 # Saving updated data
-                json.dump(data, data_file, indent=4)
+                json.dump(new_data, data_file, indent=4)
         finally:
             website_entry.delete(0, END)
             password_entry.delete(0, END)
@@ -68,7 +68,7 @@ def save():
 def find_password():
     website = website_entry.get()
     try:
-        with open("C:/Users/home/Desktop/Tanmay The Entirety/Python Stuff/#100 day code challange/challange_15/data.json") as data_file:
+        with open("C:/Users/home/Desktop/...../data.json") as data_file:  # Add the path to the data.json from your system
             data = json.load(data_file)
     except FileNotFoundError:
         messagebox.showinfo(title="Error", message="No Data File Found.")
@@ -91,7 +91,7 @@ window.config(padx=50, pady=50)
 
 canvas = Canvas(height=200, width=200)
 logo_img = PhotoImage(
-    file="C:/Users/home/Desktop/Tanmay The Entirety/Python Stuff/#100 day code challange/challange_15/logo.png")
+    file="C:/Users/home/Desktop/......../logo.png") #Add the path to the logo.png from your system
 canvas.create_image(100, 100, image=logo_img)
 canvas.grid(row=0, column=1)
 
@@ -109,7 +109,8 @@ website_entry.grid(row=1, column=1)
 website_entry.focus()
 email_entry = Entry(width=55)
 email_entry.grid(row=2, column=1)
-email_entry.insert(0, "mutalikdesaitanmay@gmail.com")
+# Add your gmail tht should be pre - filled
+email_entry.insert(0, "yourgmailaddress@gmail.com")
 password_entry = Entry(width=55)
 password_entry.grid(row=3, column=1)
 
