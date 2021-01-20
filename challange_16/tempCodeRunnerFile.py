@@ -1,2 +1,1 @@
-
-    original = pandas.read_csv(
+canvas.config(bg=BACKGROUND_COLOR)
